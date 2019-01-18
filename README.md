@@ -36,8 +36,10 @@ which can be used in the frontend without any server-side implementation.
 <link rel="stylesheet" href="https://imsun.github.io/gitment/style/default.css">
 ```
 
+自建一个可用的地址：
+
 ```html
-<script src="https://imsun.github.io/gitment/dist/gitment.browser.js"></script>
+<script src="https://blog.zhenggangzhao.org/dist/gitment.browser.js"></script>
 ```
 
 or via npm:
