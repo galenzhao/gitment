@@ -99,7 +99,7 @@ class Gitment {
       }, options)
 
       this.state.user.isLoggingIn = true
-      http.post('https://gh-oauth.imsun.net', {
+      http.post('https://githuboauth.zhenggangzhao.org', {
           code,
           client_id,
           client_secret,
@@ -251,7 +251,7 @@ class Gitment {
       return http.get(`/repos/${owner}/${repo}/issues/comments/${comment.id}/reactions`, {})
     }))
       .then(reactionsArray => {
-        comments.forEach((comment, index) => {
+        comments.reverse().forEach((comment, index) => {
           comentReactions[comment.id] = reactionsArray[index]
         })
         this.state.commentReactions = comentReactions
